@@ -9,7 +9,7 @@ User.hasMany(Artists, {
   });
 
 Genre.hasMany(Artists, {
-    foreignKey: ''
+    foreignKey: 'user_id'
 });
 
 Saved.belongsTo(User, {
