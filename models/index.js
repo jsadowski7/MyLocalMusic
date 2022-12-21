@@ -12,10 +12,14 @@ Genre.hasMany(Artists, {
     foreignKey: ''
 });
 
+Saved.belongsTo(User, {
+    foreignKey: 'user_id'
+})
 
+User.hasMany(Saved, {
+    foreignKey: 'user_id'
 
-
-
+})
 
 
 module.exports = {Artists, Genre, Saved, User};
