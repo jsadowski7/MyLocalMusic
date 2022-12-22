@@ -18,9 +18,26 @@ Artists.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
+
+      img_filename:{
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
       description: {
         type: DataTypes.STRING,
+        allowNull: false,
         },
+
+      artist_site:{
+        type: DataTypes.STRING,
+        allowNull: false,
+
+      spotify:{
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
     genre_id:{
         type: DataTypes.INTEGER,
         references: {
@@ -29,7 +46,7 @@ Artists.init(
         },
     }
       },
-
+    },
     {
         sequelize,
         timestamps: false,
