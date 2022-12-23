@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
-const { Artists } = require('.');
+
 
 
 class Artists extends Model {}
@@ -52,9 +52,9 @@ Artists.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'artists',
       }
     );
-user_id
+
 
 module.exports = Artists;
