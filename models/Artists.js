@@ -55,6 +55,6 @@ Artists.init(
         modelName: 'project',
       }
     );
-user_id
+
 
 module.exports = Artists;
