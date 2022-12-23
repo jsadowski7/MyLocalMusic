@@ -5,13 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyLocalMusic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
+    <!--header nav-->
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
+        <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <!--need to add logo-->
+          <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="50" height="50" alt="">
+        </a>
+        <h1>
+        <a href="/">MyLocalMusic</a>
       </h1>
+        <button>Logout</button>
+      </nav>
+    </header>
+
+    <!--side nav-->
+    <div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <!--<a class="nav-link" href="#">My Saved Artists</a>-->
+                <button type="button" class="btn btn-primary btn-sm">My Saved Artists</button>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Genres</a>
+            </li>
+        </ul>
+    </div>
+
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/homepage">homepage</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+</div>
+
