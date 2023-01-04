@@ -13,7 +13,7 @@ const loginFormHandler = async (event) => {
     });
     // If ok redirect to homepage
     if (response.ok) {
-      document.location.replace("/profile");
+      document.location.replace("/artist");
     } else {
       alert("Failed to log in.");
     }

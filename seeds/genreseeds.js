@@ -16,6 +16,6 @@ const genreData = [
  
 ];
 
-const seedGenre = () => Genre.bulkCreate(genreData);
-
+const seedGenre = () => { Genre.bulkCreate(genreData);
+};
 module.exports = seedGenre;

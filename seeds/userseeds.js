@@ -1,6 +1,6 @@
 const { User } = require('../models');
-
 const sequelize = require('../config/connection');
+
 
 const userData = [
   {
@@ -30,7 +30,7 @@ const userData = [
 ];
 
 const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+ await sequelize.sync({ force: false, alter: true });
 
   await User.bulkCreate(userData, {
     individualHooks: true,
