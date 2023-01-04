@@ -3,7 +3,7 @@ const Genre = require('./Genre');
 const Saved = require('./Saved');
 const User = require('./User');
 
-User.hasMany(Artists, {
+ User.hasMany(Artists, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
   });
@@ -19,7 +19,7 @@ Saved.belongsTo(User, {
 User.hasMany(Saved, {
     foreignKey: 'user_id'
 
-})
+}) 
 
 
 module.exports = {Artists, Genre, Saved, User};
