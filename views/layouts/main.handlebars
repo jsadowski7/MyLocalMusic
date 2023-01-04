@@ -22,6 +22,7 @@
           </h1>
           <button>Logout</button>
 
+          <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
           <a href="/homepage">homepage</a> |
           <button class="no-button" id="logout">logout</button>
@@ -31,20 +32,27 @@
 
         </nav>
     </header>
-      <!-- Conditionally render login or logout links -->
+
 
   <div class="flex-column justify-space-around">
     <!--side nav-->
     <div class="width: 30%">
-        <ul class="nav flex-column">
-            <li class="nav-item">
+        <div class="nav flex-column">
+            <div class="nav-item">
                 <!--<a class="nav-link" href="#">My Saved Artists</a>-->
                 <button type="button" class="btn btn-primary btn-sm">My Saved Artists</button>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Genres</a>
-            </li>
-        </ul>
+            </div>
+
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Genres </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li class="dropdown-item" href="#">Indie</li>
+                  <li class="dropdown-item" href="#">Pop</li>
+                  <li class="dropdown-item" href="#">Rock</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <div class="body-content">
