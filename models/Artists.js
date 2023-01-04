@@ -32,21 +32,22 @@ Artists.init(
       artist_site:{
         type: DataTypes.STRING,
         allowNull: false,
+      },
 
       spotify:{
         type: DataTypes.STRING,
         allowNull: false,
       },
 
-    genre_id:{
+   /* genre_id:{
         type: DataTypes.INTEGER,
         references: {
           model: 'genre',
           key: 'id',
         },
-    }
+    } */
       },
-    },
+    
     {
         sequelize,
         timestamps: false,

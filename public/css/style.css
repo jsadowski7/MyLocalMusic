@@ -1,0 +1,42 @@
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*NEED TO FORMAT MEDIA QUERIES
+
+/* media query for larger screens */
+@media screen and (max-width: 992px) {
+    header {
+    /*    width: 75%;  */
+    }
+
+    body {
+        color: blue;
+    }
+    
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (max-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    body {
+        color: red;
+    }
+
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
