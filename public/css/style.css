@@ -1,10 +1,28 @@
+:root{
+    --primary: #858585;
+    --secondary: #1499D3;
+
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primary);
 }
 
+header {
+    align-items: center;
+    padding: 1%;
+    background-color: var(--secondary);
+}
+
+h1 {
+    text-align: center;
+}
 /*NEED TO FORMAT MEDIA QUERIES
 
 /* media query for larger screens */
