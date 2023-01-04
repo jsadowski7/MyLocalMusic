@@ -1,28 +1,70 @@
 :root{
-    --primary: #858585;
-    --secondary: #1499D3;
-
+    --primary: #AAA0A0;
+    --secondary: #474853;
+    --tertiary: #77777A;
 }
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
 }
 
 body {
     line-height: 1.5;
     font-size: 16px;
-    background-color: var(--primary);
+    background-image: url("/images/sweet_spirit.jpg");
 }
 
 header {
     align-items: center;
     padding: 1%;
     background-color: var(--secondary);
+    color: white;
 }
 
 h1 {
     text-align: center;
+    background-color: transparent;
+    font-family: tahoma;
+    font-size: 50px;
+    color: white;
 }
+
+.top-nav {
+    color: white;
+}
+
+.title {
+    display: inline-block;
+}
+
+.no-box {
+    width: 45%;
+    border-radius: 15px;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+
+.box{
+    width: 45%;
+    background-color: var(--secondary);
+    box-shadow: 4px 4px 4px var(--tertiary);
+    border-radius: 15px;
+    position: fixed;
+    top: 60%;
+    left: 30%;
+}
+
+.about-app, .app-instruct {
+    margin: 20px;
+    padding: 10px;
+}
+
+.app-instruct {
+    color: white;
+}
+
+
 /*NEED TO FORMAT MEDIA QUERIES
 
 /* media query for larger screens */

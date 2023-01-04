@@ -1,0 +1,11 @@
+/*side nav specific*/
+#top-nav {
+    flex: 0;
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    font-size: 10px;
+  }
+
+  nav.justify-content-center {
+    color: white;
+}
