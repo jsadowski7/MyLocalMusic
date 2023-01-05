@@ -30,7 +30,7 @@ const userData = [
 ];
 
 const seedDatabase = async () => {
- await sequelize.sync({ force: false, alter: true });
+ await sequelize.sync({ force: false });
 
   await User.bulkCreate(userData, {
     individualHooks: true,
