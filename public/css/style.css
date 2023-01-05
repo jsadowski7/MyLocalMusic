@@ -1,5 +1,6 @@
 :root{
-    --primary: #AAA0A0;
+    --primary: #EAEAEA;
+    /*--primary: #AAA0A0;*/
     --secondary: #474853;
     --tertiary: #77777A;
 }
@@ -53,15 +54,6 @@ h1 {
     position: fixed;
     top: 60%;
     left: 30%;
-}
-
-.about-app, .app-instruct {
-    margin: 20px;
-    padding: 10px;
-}
-
-.app-instruct {
-    color: white;
 }
 
 
