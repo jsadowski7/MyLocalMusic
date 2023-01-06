@@ -1,69 +1,65 @@
 {{>navigation}}
+<link rel="stylesheet" href="/css/genre.css" type="text/css">
 
 <div class='artist-container text-white'>
-  <div class='card-header column-md-10'>
+  <div class='card-header row'>
     <h2>
-     Indie
+      Indie
     </h2>
-    </div>
- 
-  {{#each artists as |artist|}}
+
+    {{#each artists as |artist|}}
     <div class='photoblock col-md-5'>
-   
-  <a href="/artist/{{artist.id}}"> <img src="./images/nightcap.jpg"> </a>
+
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
     </div>
-   
-  {{/each}}
 
-
-
-<div class='artist-container text-white'>
-  <div class='card-header column md-10'>
-    <h2>
-     Country
-    </h2>
+    {{/each}}
   </div>
-  {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-         
-  <img src="./images/{{artist.img_filename}}" >
- 
-    
-    </div>
-   
-  {{/each}}
 
-  <div class='artist-container text-white'>
-  <div class='card-header column-md-10'>
+  <div class='card-header row'>
     <h2>
-     Rock
+      Country
     </h2>
-  </div>
-  {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-         
-  <img src="./images/{{artist.img_filename}}" >
- 
-    
-    </div>
-   
-  {{/each}}
 
-  <div class='artist-container text-white'>
+
+    {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+    </div>
+
+    {{/each}}
+
+  </div>
+
+  <div class='card-header row'>
+    <h2>
+      Rock
+    </h2>
+
+    {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+    </div>
+
+    {{/each}}
+  </div>
+
+
   <div class='card-header col-md-10'>
     <h2>
-     Pop
+      Pop
     </h2>
+
+    {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+
+    </div>
+    {{/each}}
+
   </div>
-  {{#each artists as |artist|}}
-    <div class='artist col-md-5'>
-         
-  <img src="./images/{{artist.img_filename}}" >
-  
-   
 
-     </div>
-   
-  {{/each}}
-
- 
+</div>
