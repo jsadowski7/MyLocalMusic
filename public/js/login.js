@@ -13,7 +13,7 @@ const loginFormHandler = async (event) => {
     });
     // If ok redirect to homepage
     if (response.ok) {
-      document.location.replace("/login");
+      document.location.replace("/");
     } else {
       alert("Failed to log in.");
     }
