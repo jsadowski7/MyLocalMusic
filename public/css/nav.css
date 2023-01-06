@@ -2,10 +2,11 @@
 #top-nav {
     flex: 0;
     background-color: var(--tertiary);
-    color: var(--secondary);
+    color: white;
     font-size: 10px;
   }
 
   nav.justify-content-center {
     color: white;
 }
+
