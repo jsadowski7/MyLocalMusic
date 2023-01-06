@@ -1,0 +1,23 @@
+* {
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/indoor-venue.jpg");
+    background-size: auto;
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    padding: 20x;
+    
+}
+
+.photoblock {
+    width: 180px;
+    margin: 5px;
+    justify-items: auto;
+  
+    }
