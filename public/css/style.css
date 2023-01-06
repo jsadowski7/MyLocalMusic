@@ -1,0 +1,94 @@
+:root{
+    --primary: #EAEAEA;
+    /*--primary: #AAA0A0;*/
+    --secondary: #474853;
+    --tertiary: #77777A;
+}
+
+* {
+    font-family: Verdana;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    background-image: url("/images/sweet_spirit.jpg");
+}
+
+header {
+    align-items: center;
+    padding: 1%;
+    background-color: var(--secondary);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    background-color: transparent;
+    font-family: tahoma;
+    font-size: 50px;
+    color: white;
+}
+
+.top-nav {
+    color: white;
+}
+
+.title {
+    display: inline-block;
+}
+
+.no-box {
+    width: 45%;
+    border-radius: 15px;
+    position: fixed;
+    top: 30%;
+    left: 30%;
+}
+
+.box{
+    width: 45%;
+    background-color: var(--secondary);
+    box-shadow: 4px 4px 4px var(--tertiary);
+    border-radius: 15px;
+    position: fixed;
+    top: 60%;
+    left: 30%;
+}
+
+
+/*NEED TO FORMAT MEDIA QUERIES
+
+/* media query for larger screens */
+@media screen and (max-width: 992px) {
+    header {
+    /*    width: 75%;  */
+    }
+
+    body {
+        color: blue;
+    }
+    
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (max-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    body {
+        color: red;
+    }
+
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }

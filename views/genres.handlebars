@@ -1,0 +1,69 @@
+{{>navigation}}
+
+<div class='artist-container text-white'>
+  <div class='card-header column-md-10'>
+    <h2>
+     Indie
+    </h2>
+    </div>
+ 
+  {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+   
+  <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+    </div>
+   
+  {{/each}}
+
+
+
+<div class='artist-container text-white'>
+  <div class='card-header column md-10'>
+    <h2>
+     Country
+    </h2>
+  </div>
+  {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+         
+  <img src="./images/{{artist.img_filename}}" >
+ 
+    
+    </div>
+   
+  {{/each}}
+
+  <div class='artist-container text-white'>
+  <div class='card-header column-md-10'>
+    <h2>
+     Rock
+    </h2>
+  </div>
+  {{#each artists as |artist|}}
+    <div class='photoblock col-md-5'>
+         
+  <img src="./images/{{artist.img_filename}}" >
+ 
+    
+    </div>
+   
+  {{/each}}
+
+  <div class='artist-container text-white'>
+  <div class='card-header col-md-10'>
+    <h2>
+     Pop
+    </h2>
+  </div>
+  {{#each artists as |artist|}}
+    <div class='artist col-md-5'>
+         
+  <img src="./images/{{artist.img_filename}}" >
+  
+   
+
+     </div>
+   
+  {{/each}}
+
+ 

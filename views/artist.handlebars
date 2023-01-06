@@ -1,0 +1,34 @@
+{{>navigation}}
+
+
+    <h2 class="text-primary">
+      {{artist.band_name}}
+    </h2>
+  <br>
+ <div>
+  <img src="./images/{{artist.img_filename}}" >
+ </div>
+ </br>
+
+ <div class="d-flex justify-content-end">
+  <p >
+    {{artist.description}}
+    <br />
+    <a class="btn btn-primary" href="{{artist.artist_site}}" role="button"> Artist Site</a>
+    <br />
+    <a class="btn btn-primary" href="{{artist.spotify}}" role="button">Check them out on Spotify!</a>
+  
+
+  </p>
+
+ </div>
+
+      <input type='checkbox' value='true' />
+ 
+      <br />
+      <button type='submit' value='Submit'>
+        Submit
+      </button>
+
+  </div>
+</div>
