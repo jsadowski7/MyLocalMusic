@@ -29,7 +29,7 @@ const sess = {
 };
 
 app.use(session(sess));
-
+hbs.registerPartials(__dirname + "/views/partials");
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
