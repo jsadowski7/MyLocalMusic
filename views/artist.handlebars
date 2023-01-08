@@ -1,15 +1,15 @@
 {{>navigation}}
 
-<div class="container">
-   <h1 class="text-center">{{artist.band_name}}</h1>
+<div class="artist-container">
+   <h1 class="text-left">{{artist.band_name}}</h1>
 
    <div class="row text-center">
-        <div class="col-xl-6">
+        <div class="col-xl-6" id="artist-img">
               <img src="/images/{{artist.img_filename}}" class="thumbnail" style="max-width: 100%">
         </div>
 
-        <div class="col-xl-6">
-          <p >{{artist.description}}</p>
+        <div class="col-xl-6" id="artist-info">
+          <p class="artist-desc">{{artist.description}}</p>
           <br/>
           <a class="btn btn-primary" href="{{artist.artist_site}}" role="button"> Artist Site</a>
           <br/>

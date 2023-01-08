@@ -7,4 +7,16 @@ body {
     background-size: auto;
 }
 
+p.artist-desc {
+    color: var(--primary);
+}
+
+.artist-container {
+    margin: 50px 10% 20px 10%;
+}
+
+.text-left {
+    padding-bottom: 25px;
+}
+
 
