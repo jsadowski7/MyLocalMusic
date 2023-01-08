@@ -22,6 +22,38 @@ const artist_seeds = [
             'https://open.spotify.com/artist/0d4OObbLXdSSO2suAeC4jk',
         
     },
+    {
+        band_name: 'The Peterson Brothers',
+        img_filename: 'petersonbros.jpg',
+        description: 'The Peterson Brothers combine infectious energy and modern grooves with jazz, funk, blues & soul to a create their own unique sound.',
+        artist_site: 'https://www.petersonbrothersband.com/',
+        spotify: 'https://open.spotify.com/artist/6op6sWjJ0fTmCg4bPyDkJs',
+        
+    },
+    {
+        band_name: 'Explosions in the Sky',
+        img_filename: 'explosions.jpg',
+        description: 'Instrumental rock band formed in 1999. The band has garnered popularity for their elaborately developed guitar work, narratively styled instrumentals, and enthusiastic live shows',
+        artist_site: 'http://www.explosionsinthesky.com/',
+        spotify: 'https://open.spotify.com/artist/1uQWmt1OhuHGRKmZ2ZcL6p',
+        
+    },
+    {
+        band_name: 'The Sword',
+        img_filename: 'sword.jpg',
+        description: 'A doom rock/metal band formed in 2003 in ATX had a song featured on video game Guitar Hero II',
+        artist_site: 'https://theswordofficial.com/',
+        spotify: 'https://open.spotify.com/artist/0q32a3GRCjDxS4EIrC7YVY',
+        
+    },
+    {
+        band_name: 'Gary Clark Jr.',
+        img_filename: 'gary.webp',
+        description: 'Rock/Blues artist born in Austin. He is known for his fusion of blues, rock and soul music with elements of hip hop.',
+        artist_site: 'https://www.garyclarkjr.com/?frontpage=true',
+        spotify: 'https://open.spotify.com/artist/01aC2ikO4Xgb2LUpf9JfKp',
+        
+    },
 ];
 
 const seedArtists = () => {
