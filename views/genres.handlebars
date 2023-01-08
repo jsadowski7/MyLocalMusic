@@ -8,8 +8,7 @@
 
     </h2>
   </div>
-
-  {{#each artists as |artist|}}
+  {{#each artists as |artist|}} 
   <div class='photoblock col-md-2'>
 
     <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
@@ -19,14 +18,15 @@
   {{/each}}
 </div>
 
+
+
+
 <div class='artist-container'>
   <div class='card-header row'>
     <h2 "text-left">
       Country
     </h2>
   </div>
-
-
 
   {{#each artists as |artist|}}
   <div class='photoblock col-md-2'>
@@ -37,6 +37,8 @@
 
   {{/each}}
 </div>
+
+
 
 
 <div class='artist-container'>
@@ -55,6 +57,8 @@
 
    {{/each}}
 </div>
+
+
 
 <div class='artist-container'>
   <div class='card-header row'>
