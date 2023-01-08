@@ -60,3 +60,20 @@ h1 {
 #artist-info {
     border: var(--tertiary)
 }
+
+/* login page */
+.col-md-6 {
+    color: var(--primary);
+
+}
+
+.form-input, #email-login{
+    color: var(--tertiary);
+}
+
+/*artist page*/
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
