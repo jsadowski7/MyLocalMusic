@@ -10,11 +10,19 @@
     font-family: Verdana;
     
 }
-a, a:hover{
+a{
     color: var(--primary);
 }
 
+a:hover, .dropdown:hover, #logout:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
 
+.title:hover {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
 
 body {
     line-height: 1.5;
