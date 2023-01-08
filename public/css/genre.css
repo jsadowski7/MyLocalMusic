@@ -13,12 +13,15 @@ img {
 }
 
 .photoblock {
-    margin: 5px;
+    margin: 10px;
     justify-content: center;
   
     }
 
 h2 {
     text-align: left;
+}
 
+.artist-container {
+    padding: 3%;
 }
