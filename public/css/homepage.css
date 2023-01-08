@@ -1,15 +1,5 @@
-body {
-    background-image: url("/images/dark-band2.jpg");
-}
-
-.about-app, .app-instruct {
+.about-app{
     margin: 20px;
     padding: 10px;
     color: var(--primary);
 }
-
-/*
-.app-instruct {
-    color: white;
-}
-*/

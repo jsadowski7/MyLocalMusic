@@ -3,6 +3,7 @@
     /*--primary: #AAA0A0;*/
     --secondary: #474853;
     --tertiary: #77777A;
+    --dark: #303030;
 }
 
 * {
@@ -16,14 +17,18 @@ a {
 body {
     line-height: 1.5;
     font-size: 16px;
-    background-image: url("/images/sweet_spirit.jpg");
+    background-color: var(--dark);
+    background-image: url("/images/dark-band2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-color: var(--dark);*/
 }
 
 header {
     align-items: center;
     padding: 1%;
     background-color: var(--secondary);
-    color: white;
+    color: var(--primary);
 }
 
 h1 {
@@ -31,23 +36,15 @@ h1 {
     background-color: transparent;
     font-family: tahoma;
     font-size: 50px;
-    color: white;
+    color: var(--primary);
 }
 
 .top-nav {
-    color: white;
+    color: var(--primary);
 }
 
 .title {
     display: inline-block;
-}
-
-.no-box {
-    width: 45%;
-    border-radius: 15px;
-    position: fixed;
-    top: 30%;
-    left: 30%;
 }
 
 .box{
@@ -56,6 +53,10 @@ h1 {
     box-shadow: 4px 4px 4px var(--tertiary);
     border-radius: 15px;
     position: fixed;
-    top: 60%;
+    top: 40%;
     left: 30%;
+}
+
+#artist-info {
+    border: var(--tertiary)
 }
