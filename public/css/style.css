@@ -1,18 +1,20 @@
 :root{
     --primary: #EAEAEA;
     /*--primary: #AAA0A0;*/
-    --secondary: #474853;
+    --secondary: #323131;
     --tertiary: #77777A;
-    --dark: #303030;
+    --dark: #181818;
 }
 
 * {
     font-family: Verdana;
     
 }
-a {
+a, a:hover{
     color: var(--primary);
 }
+
+
 
 body {
     line-height: 1.5;
@@ -31,12 +33,19 @@ header {
     color: var(--primary);
 }
 
-h1 {
+h1, h2{
     text-align: center;
     background-color: transparent;
     font-family: tahoma;
-    font-size: 50px;
     color: var(--primary);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 .top-nav {
@@ -64,11 +73,11 @@ h1 {
 /* login page */
 .col-md-6 {
     color: var(--primary);
-
 }
 
 .form-input, #email-login{
-    color: var(--tertiary);
+    color: var(--secondary);
+    background-color: var(--primary);
 }
 
 /*artist page*/
@@ -76,4 +85,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*artist and genre page*/
+.img-thumbnail {
+    background-color: var(--primary);
+    color: var(--primary);
 }
