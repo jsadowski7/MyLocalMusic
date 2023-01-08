@@ -5,70 +5,65 @@
   <div class='card-header row'>
     <h2>
       Indie
-      
+
     </h2>
-   </div>
+  </div>
 
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
 
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-    </div>
-   
-  
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+  </div>
+  {{/each}}
 
-
-    {{/each}}
- 
 
   <div class='card-header row'>
     <h2>
       Country
     </h2>
-   </div>
-  
+  </div>
 
 
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
 
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-     </div> 
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
 
-    {{/each}}
-   
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+  </div>
 
-  
+  {{/each}}
+
+
+
 
   <div class='card-header row'>
     <h2>
       Rock
     </h2>
-    
+  </div>
 
-     </div>
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
 
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+  </div>
+   {{/each}}
 
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-   
-
-    {{/each}}
-     </div>
 
   <div class='card-header row'>
     <h2>
       Pop
     </h2>
-     
+
   </div>
 
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
 
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-         </div>
-    {{/each}}
-  
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
+  </div>
+
+
+  {{/each}}
+
 </div>
