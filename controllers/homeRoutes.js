@@ -5,15 +5,14 @@ const withAuth = require("../utils/auth");
 router.get('/', async (req, res) => {
   try {
 
-    res.render('homepage');
+    res.render('login');
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 router.get("/login", (req, res) => {
-
-  res.render("login");
+  res.render("homepage");
 });
 
 
@@ -47,6 +46,14 @@ router.get('/genres', async (req, res) => {
       res.json(err);
     });
       const artists = artistData.map((artist) => artist.get({ plain: true }));
+
+
+  // break down this artists Array (indie, county, rock , xxx)
+    // let indie_bands = artistData.map ((artist) => if (artist.genre_id == 1) { return artist});
+    // let country_bands = artistData.map ((artist) => if (artist.genre_id == 2) { return artist});
+    // let rock_bands = artistData.map ((artist) => if (artist.genre_id == 3) { return artist});
+    // let pop_bands = artistData.map ((artist) => if (artist.genre_id == 4) { return artist});
+    
 
       const genreData = await Genre.findAll().catch((err) => { 
         res.json(err);

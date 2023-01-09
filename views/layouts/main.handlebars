@@ -11,29 +11,39 @@
     <link rel="stylesheet" href="/css/artist.css" type="text/css">
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <link rel="stylesheet" href="/css/nav.css" type="text/css">
-   
 
 
     <title>MyLocalMusic</title>
 </head>
 
 <body>
-<!--Simple nav-->
-    <header class="align-center p-2">
-    {{!-- <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-              <!--need to add logo-->
-            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="50" height="50" alt="">
-          </a> --}}
-          <h1>
-            <a href="/" class="title" class="fs-1">MyLocalMusic</a>
-          </h1>
-        </nav>
-    </header>
+
+    <header>
+          <a href="/"><img src="/images/mylocalmusiclogo.png" alt="MyLocalMusicLogo" class="header-logo justify-content-center"></a>
+    </header> 
 
     <div class="body-content">
         {{{body}}}
     </div>
 
 </body>
+
+
+<footer style="position: fixed; bottom: 0;">
+  <!-- Grid container -->
+  <div>
+    <!-- Section: Social media -->
+    <section>
+      <!-- logo -->
+        <img src="/images/mylocalmusiclogo.png" alt="MyLocal Music Logo" class="footer-logo justify-content-center">
+    </section>
+    <!-- Section: Social media -->
+    <div class="copyright">
+    Copyright &copy;<script>document.write(new Date().getFullYear())</script> MyLocalMusic
+    </div>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
 </html>

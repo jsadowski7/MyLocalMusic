@@ -2,9 +2,44 @@
     font-family: Verdana;
 }
 
-body {
-    /*background-image: url("/images/indoor-venue.jpg");*/
-    background-size: auto;
+
+
+p.artist-desc {
+    color: var(--primary);
 }
 
+.artist-container {
+    margin: 50px 10% 20px 10%;
+}
 
+.text-left {
+    padding-bottom: 25px;
+}
+
+.artist-desc {
+    background-color: var(--secondary);
+    padding: 3%;
+    border-radius: 3px;
+
+}
+
+.submit {
+    background-color: var(--primary);
+    color: var(--secondary)
+}
+
+.btn-success{
+    color: var(--spotify);
+    background-color: var(--secondary);
+}
+
+.btn-light{
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.custom-control-label {
+    color: var(--primary);
+    font-style: verdana;
+}

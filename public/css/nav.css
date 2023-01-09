@@ -2,10 +2,7 @@
 #top-nav {
     flex: 0;
     background-color: var(--tertiary);
-    color: var(--secondary);
-    font-size: 10px;
+    color: var(--primary);
+    font-size: 15px;
   }
 
-  nav.justify-content-center {
-    color: white;
-}

@@ -1,94 +1,246 @@
 :root{
     --primary: #EAEAEA;
     /*--primary: #AAA0A0;*/
-    --secondary: #474853;
+    --secondary: #323131;
     --tertiary: #77777A;
+    --dark: #181818;
+    --spotify: #1DB954;
 }
 
-* {
-    font-family: Verdana;
+
+
+/*slideshow*/
+.crossfade > figure {
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--dark);
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .crossfade > figure:nth-child(1) {
+    background-image: url('../images/Mohawk_venue.jpg');
+  }
+  .crossfade > figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('../images/austin-music-venues-ACL-Live.jpeg');
+  }
+  .crossfade > figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('../images/indoor-venue.jpg');
+  }
+  .crossfade > figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('../images/white-horse.jpg');
+  }
+  .crossfade > figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('../images/Black-Pumas-at-Stubbs-austin-music-venues.jpg');
+  }
+
+  @keyframes imageAnimation {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    8% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    17% {
+      opacity: 1
+    }
+    25% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+
+
+  * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+a{
+    color: var(--primary);
+}
+
+
+/*side nav specific*/
+#top-nav {
+    flex: 0;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: 15px;
+  }
+  
+/*header*/
+
+.header-logo {
+    width: 40%;
+    padding: 1%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-logo:hover {
+    text-decoration: none;
+}
+
+a:hover, .dropdown:hover, #logout:hover {
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+.title:hover {
+    color: var(--primary);
+    background-color: var(--secondary);
 }
 
 body {
     line-height: 1.5;
     font-size: 16px;
-    background-image: url("/images/sweet_spirit.jpg");
+    background-color: var(--dark);
+    background-image: url("/images/dark-band2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*background-color: var(--dark);*/
 }
+
+
 
 header {
     align-items: center;
     padding: 1%;
     background-color: var(--secondary);
-    color: white;
+    color: var(--primary);
 }
 
-h1 {
+
+
+h1, h2{
     text-align: center;
     background-color: transparent;
     font-family: tahoma;
+    color: var(--primary);
+}
+
+h1 {
     font-size: 50px;
-    color: white;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 .top-nav {
-    color: white;
+    color: var(--primary);
 }
 
 .title {
     display: inline-block;
 }
 
-.no-box {
-    width: 45%;
-    border-radius: 15px;
-    position: fixed;
-    top: 30%;
-    left: 30%;
-}
-
 .box{
     width: 45%;
     background-color: var(--secondary);
-    box-shadow: 4px 4px 4px var(--tertiary);
-    border-radius: 15px;
-    position: fixed;
-    top: 60%;
-    left: 30%;
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+
+#artist-info {
+    border: var(--tertiary)
+}
+
+/* login page */
+.col-md-6 {
+    color: var(--primary);
+    margin-top: 10%;   
+}
+
+.form-input, #email-login{
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+/*artist page*/
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*artist and genre page*/
+.img-thumbnail {
+    background-color: var(--primary);
+    color: var(--primary);
 }
 
 
-/*NEED TO FORMAT MEDIA QUERIES
+/*footer*/
+footer {
+    background-color: var(--secondary);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 
-/* media query for larger screens */
-@media screen and (max-width: 992px) {
-    header {
-    /*    width: 75%;  */
-    }
-
-    body {
-        color: blue;
-    }
+.copyright {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2%;
+    padding-top: 0;
+    color: var(--primary);
+    font-size: calc(1% + .5vw);
     
-    .card-column {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
+}
+/*login*/
+.login-form {
+    margin-top: 20px;
 }
 
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (max-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    body {
-        color: red;
-    }
+.login-divs {
+    padding: 5%;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    width: 70%;
+    margin: 3% 20% 5% 15%;
+}
 
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:last-child {
-      flex-grow: 1;
-    }
-  }
+/*footer*/
+.footer-logo {
+    width: 12%;
+    padding: 1%;
+    padding-top: 2%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo:hover {
+    text-decoration: none;
+}
+
+
+

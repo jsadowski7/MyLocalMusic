@@ -1,0 +1,8 @@
+* {
+    font-family: Verdana;
+    color: var(--primary);
+}
+
+.artist-container {
+    padding: 3%;
+}
