@@ -46,8 +46,15 @@ router.get('/genres', async (req, res) => {
       res.json(err);
     });
       const artists = artistData.map((artist) => artist.get({ plain: true }));
-      // break down this artists Array (indie, county, rock , xxx)
-      // let indie_bands = artists.filter()   || artists.map(item => if(item.genre_id == 1) { return item }
+
+
+  // break down this artists Array (indie, county, rock , xxx)
+    // let indie_bands = artistData.map ((artist) => if (artist.genre_id == 1) { return artist});
+    // let country_bands = artistData.map ((artist) => if (artist.genre_id == 2) { return artist});
+    // let rock_bands = artistData.map ((artist) => if (artist.genre_id == 3) { return artist});
+    // let pop_bands = artistData.map ((artist) => if (artist.genre_id == 4) { return artist});
+    
+
       const genreData = await Genre.findAll().catch((err) => { 
         res.json(err);
       });
