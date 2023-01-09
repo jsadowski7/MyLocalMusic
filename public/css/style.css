@@ -8,6 +8,7 @@
 }
 
 
+
 /*slideshow*/
 .crossfade > figure {
     animation: imageAnimation 30s linear infinite 0s;
