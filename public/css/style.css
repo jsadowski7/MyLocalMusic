@@ -84,6 +84,8 @@ h2 {
 /* login page */
 .col-md-6 {
     color: var(--primary);
+    margin-top: 10%;
+    
 }
 
 .form-input, #email-login{
@@ -108,4 +110,17 @@ h2 {
 /*footer*/
 footer {
     background-color: var(--secondary);
+}
+
+/*login*/
+.login-form {
+    margin-top: 20px;
+}
+
+.login-divs {
+    padding: 5%;
+    border-radius: 3px;
+    background-color: var(--secondary);
+    width: 75%;
+    margin: 3% 10% 5% 15%;
 }
