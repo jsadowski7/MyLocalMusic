@@ -38,7 +38,7 @@
   }
   .crossfade > figure:nth-child(4) {
     animation-delay: 18s;
-    background-image: url('../images/music_faster.jpeg');
+    background-image: url('../images/white-horse.jpg');
   }
   .crossfade > figure:nth-child(5) {
     animation-delay: 24s;
