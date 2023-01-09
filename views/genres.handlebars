@@ -1,65 +1,89 @@
 {{>navbar}}
 <link rel="stylesheet" href="/css/genre.css" type="text/css">
 
-<div class='artist-container text-white'>
+<div class='artist-container'>
   <div class='card-header row'>
-    <h2>
+    <h2 "text-left">
       Indie
+
     </h2>
-
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-    </div>
-
-    {{/each}}
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 52, also remove line 15 on this file (genres.handlebars)}}
+ {{!-- {{#each indie_bands as |artist|}}  --}}
+
+ {{#each artists as |artist|}}
+    <div class='photoblock col-md-2'>
+
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
+      <p class="text-left">{{artist.band_name}}</p> 
+    </div>
+  
+  {{/each}}
+</div>
+
+
+
+
+<div class='artist-container'>
   <div class='card-header row'>
-    <h2>
+    <h2 "text-left">
       Country
     </h2>
-
-
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-    </div>
-
-    {{/each}}
-
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 53, also remove line 37 on this file (genres.handlebars)}}
+ {{!-- {{#each country_bands as |artist|}}  --}}
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
+
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
+    <p class="text-left">{{artist.band_name}}</p>
+  </div>
+
+  {{/each}}
+</div>
+
+
+
+
+<div class='artist-container'>
   <div class='card-header row'>
-    <h2>
+    <h2 "text-left">
       Rock
     </h2>
-
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-    </div>
-
-    {{/each}}
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 54, also remove line 59 on this file (genres.handlebars)}}
+ {{!-- {{#each rock_bands as |artist|}}  --}}
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
 
-  <div class='card-header col-md-10'>
-    <h2>
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"> </a>
+    <p class="text-left">{{artist.band_name}}</p>
+  </div>
+
+   {{/each}}
+</div>
+
+
+
+<div class='artist-container'>
+  <div class='card-header row'>
+    <h2 "text-left">
       Pop
     </h2>
 
-    {{#each artists as |artist|}}
-    <div class='photoblock col-md-5'>
-
-      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}"> </a>
-
-    </div>
-    {{/each}}
-
   </div>
+
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 55, also remove line 81 on this file (genres.handlebars)}}
+ {{!-- {{#each pop_bands as |artist|}}  --}}
+  {{#each artists as |artist|}}
+  <div class='photoblock col-md-2'>
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
+    <p class="text-left">{{artist.band_name}}</p>
+  </div>
+
+  {{/each}}
 
 </div>
