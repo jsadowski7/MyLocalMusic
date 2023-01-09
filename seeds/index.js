@@ -1,5 +1,4 @@
 const seedArtists = require('./artistseeds');
-const seedGenre = require('./genreseeds');
 const seedSaved = require('./savedseeds');
 const seedUser = require('./userseeds');
 const colors = require("colors");
@@ -11,9 +10,6 @@ const seedAll = async () => {
   console.log('\n----- DATABASE SYNCED -----\n'.bold.green);
  await seedArtists();
   console.log('\n----- ARTISTS SEEDED -----\n'.bold.green);
-
- await seedGenre();
-  console.log('\n----- GENRES SEEDED -----\n'.bold.green);
 
   await seedSaved();
   console.log('\n----- SAVED ARTISTS SEEDED -----\n'.bold.green);

@@ -38,12 +38,9 @@ Artists.init(
         type: DataTypes.STRING,
         allowNull: false,
       },
-      genre_id:{
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'genre',
-          key: 'id',
-        },
+      genre:{
+        type: DataTypes.STRING,
+      
       }, 
       user_id:{
         type: DataTypes.INTEGER,

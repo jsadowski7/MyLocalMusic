@@ -53,14 +53,22 @@ router.get('/genres', async (req, res) => {
     // let country_bands = artistData.map ((artist) => if (artist.genre_id == 2) { return artist});
     // let rock_bands = artistData.map ((artist) => if (artist.genre_id == 3) { return artist});
     // let pop_bands = artistData.map ((artist) => if (artist.genre_id == 4) { return artist});
-    
+    let indiebands = artists.filter((artist) => artist.genre === 'indie') 
+    let countrybands = artists.filter((artist) => artist.genre === 'country') 
+    let rockbands = artists.filter((artist) => artist.genre === 'rock') 
+    let popbands = artists.filter((artist) => artist.genre === 'pop') 
 
-      const genreData = await Genre.findAll().catch((err) => { 
-        res.json(err);
-      });
-        const genres = genreData.map((genre) => genre.get({ plain: true }));
+    console.log(indiebands)
 
-      res.render('genres', { artists, genres });
+
+
+
+      // const genreData = await Genre.findAll().catch((err) => { 
+      //   res.json(err);
+      // });
+      //   const genres = genreData.map((genre) => genre.get({ plain: true }));
+
+      res.render('genres', { indiebands, countrybands, rockbands, popbands });
     });
 
 module.exports = router;
