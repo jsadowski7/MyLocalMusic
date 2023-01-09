@@ -60,4 +60,5 @@ const artist_seeds = [
 const seedArtists = () => {
     Artists.bulkCreate(artist_seeds);
 }
+
 module.exports = seedArtists;

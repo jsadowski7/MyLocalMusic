@@ -8,12 +8,15 @@
 
     </h2>
   </div>
+  {{!-- {{#each indie_bands as |artist|}} --}}
   {{#each artists as |artist|}} 
-  <div class='photoblock col-md-2'>
+  {{!--  {{#if (artist.genre_id == 1)}} --}}
+    <div class='photoblock col-md-2'>
 
-    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
-    <p class="text-left">{{artist.band_name}}</p> 
-  </div>
+      <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
+      <p class="text-left">{{artist.band_name}}</p> 
+    </div>
+ {{!--   {{/if}} --}}
   
   {{/each}}
 </div>
