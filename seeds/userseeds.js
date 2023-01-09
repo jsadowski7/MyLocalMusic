@@ -4,8 +4,8 @@ const sequelize = require('../config/connection');
 
 const userData = [
   {
-    name: 'hayley',
-    password: 'hayley1232'
+    name: 'haylee',
+    password: 'haylee1232'
   },
   {
     name: 'jake',
