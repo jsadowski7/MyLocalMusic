@@ -1,7 +1,7 @@
 * {
     font-family: Verdana;
     box-sizing: border-box;
-    color: white;
+    color: var(--primary);
 }
 
 

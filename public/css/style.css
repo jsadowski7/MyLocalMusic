@@ -4,6 +4,7 @@
     --secondary: #323131;
     --tertiary: #77777A;
     --dark: #181818;
+    --spotify: #1DB954;
 }
 
 * {
@@ -70,7 +71,7 @@ h2 {
     width: 45%;
     background-color: var(--secondary);
     box-shadow: 4px 4px 4px var(--tertiary);
-    border-radius: 15px;
+    border-radius: 10px;
     position: fixed;
     top: 40%;
     left: 30%;
