@@ -8,7 +8,7 @@
 }
 
 * {
-    font-family: Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 a{
@@ -84,11 +84,13 @@ h2 {
 .box{
     width: 45%;
     background-color: var(--secondary);
-    box-shadow: 4px 4px 4px var(--tertiary);
-    border-radius: 10px;
-    position: fixed;
-    top: 40%;
+    border-radius: 5px;
+    border: 2px solid var(--primary);
+    position: absolute;
+    top: 30%;
     left: 30%;
+    
+    
 }
 
 #artist-info {
@@ -146,7 +148,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 
 }
 
