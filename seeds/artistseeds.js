@@ -37,7 +37,7 @@ const artist_seeds = [
         description: 'Instrumental rock band formed in 1999. The band has garnered popularity for their elaborately developed guitar work, narratively styled instrumentals, and enthusiastic live shows',
         artist_site: 'http://www.explosionsinthesky.com/',
         spotify: 'https://open.spotify.com/artist/1uQWmt1OhuHGRKmZ2ZcL6p',
-        genre_id: 1,
+        genre_id: 3,
     },
     {
         band_name: 'The Sword',
