@@ -1,25 +1,6 @@
 * {
     font-family: Verdana;
-    box-sizing: border-box;
     color: var(--primary);
-}
-
-
-img {
-    width: 300px;
-    height: 300px;
-    padding: 20x;
-    
-}
-
-.photoblock {
-    margin: 10px;
-    justify-content: center;
-  
-    }
-
-h2 {
-    text-align: left;
 }
 
 .artist-container {
