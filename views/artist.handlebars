@@ -5,7 +5,20 @@
 
    <div class="row text-center">
         <div class="col-xl-6" id="artist-img">
-              <img src="/images/{{artist.img_filename}}" class="thumbnail" style="max-width: 100%">
+            <img src="/images/{{artist.img_filename}}" class="thumbnail" style="max-width: 100%">
+
+        <!--    <input type='checkbox' value='true'/>-->
+
+      <div class="custom-control custom-radio text-left">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Save Artist</label>
+      </div>
+
+
+<!--
+          <button class ='submit' type='submit' value='Submit' >
+          Save Artist
+          </button> -->
         </div>
 
         <div class="col-xl-6" id="artist-info">
@@ -16,15 +29,9 @@
             <br/>
 
           <p class="artist-desc">{{artist.description}}</p>
-
+         
           <br/>
-
-          <button type="button" class="btn btn-success">Check them out on Spotify!</button>
-          
-          <!--
-          <br/>
-          <br/>
-          <a class="btn btn-primary" href="{{artist.spotify}}" role="button">Check them out on Spotify!</a> -->
+          <a class="btn btn-success" href="{{artist.spotify}}" role="button">Check them out on Spotify!</a> 
          
           <!--
           <input type='checkbox' value='true'/>

@@ -38,3 +38,8 @@ p.artist-desc {
     background-color: var(--secondary);
     border-color: var(--primary);
 }
+
+.custom-control-label {
+    color: var(--primary);
+    font-style: verdana;
+}
