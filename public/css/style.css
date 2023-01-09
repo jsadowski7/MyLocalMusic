@@ -14,6 +14,7 @@
     backface-visibility: hidden;
     background-size: cover;
     background-position: center center;
+    background-color: var(--dark);
     color: transparent;
     height: 100%;
     left: 0px;
@@ -117,6 +118,8 @@ body {
     background-size: 100%;
     /*background-color: var(--dark);*/
 }
+
+
 
 header {
     align-items: center;
