@@ -8,15 +8,16 @@
 
     </h2>
   </div>
-  {{!-- {{#each indie_bands as |artist|}} --}}
-  {{#each artists as |artist|}} 
-  {{!--  {{#if (artist.genre_id == 1)}} --}}
+
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 52, also remove line 15 on this file (genres.handlebars)}}
+ {{!-- {{#each indie_bands as |artist|}}  --}}
+
+ {{#each artists as |artist|}}
     <div class='photoblock col-md-2'>
 
       <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
       <p class="text-left">{{artist.band_name}}</p> 
     </div>
- {{!--   {{/if}} --}}
   
   {{/each}}
 </div>
@@ -31,6 +32,8 @@
     </h2>
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 53, also remove line 37 on this file (genres.handlebars)}}
+ {{!-- {{#each country_bands as |artist|}}  --}}
   {{#each artists as |artist|}}
   <div class='photoblock col-md-2'>
 
@@ -51,6 +54,8 @@
     </h2>
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 54, also remove line 59 on this file (genres.handlebars)}}
+ {{!-- {{#each rock_bands as |artist|}}  --}}
   {{#each artists as |artist|}}
   <div class='photoblock col-md-2'>
 
@@ -71,6 +76,8 @@
 
   </div>
 
+  {{!--if we get the array breakdown on homeRoutes.js to work on line 55, also remove line 81 on this file (genres.handlebars)}}
+ {{!-- {{#each pop_bands as |artist|}}  --}}
   {{#each artists as |artist|}}
   <div class='photoblock col-md-2'>
     <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
