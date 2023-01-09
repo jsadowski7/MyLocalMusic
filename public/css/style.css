@@ -7,13 +7,82 @@
     --spotify: #1DB954;
 }
 
-* {
+
+/*slideshow*/
+.crossfade > figure {
+    animation: imageAnimation 30s linear infinite 0s;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center center;
+    color: transparent;
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .crossfade > figure:nth-child(1) {
+    background-image: url('../images/Mohawk_venue.jpg');
+  }
+  .crossfade > figure:nth-child(2) {
+    animation-delay: 6s;
+    background-image: url('../images/austin-music-venues-ACL-Live.jpeg');
+  }
+  .crossfade > figure:nth-child(3) {
+    animation-delay: 12s;
+    background-image: url('../images/indoor-venue.jpg');
+  }
+  .crossfade > figure:nth-child(4) {
+    animation-delay: 18s;
+    background-image: url('../images/music_faster.jpeg');
+  }
+  .crossfade > figure:nth-child(5) {
+    animation-delay: 24s;
+    background-image: url('../images/Black-Pumas-at-Stubbs-austin-music-venues.jpg');
+  }
+
+  @keyframes imageAnimation {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    8% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    17% {
+      opacity: 1
+    }
+    25% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
+  }
+
+
+
+  * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 a{
     color: var(--primary);
 }
+
+
+/*side nav specific*/
+#top-nav {
+    flex: 0;
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-size: 15px;
+  }
+  
+/*header*/
 
 .header-logo {
     width: 40%;
@@ -87,7 +156,7 @@ h2 {
     border-radius: 5px;
     border: 2px solid var(--primary);
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 30%;
     
     
@@ -169,7 +238,6 @@ footer {
 .footer-logo:hover {
     text-decoration: none;
 }
-
 
 
 
