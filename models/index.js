@@ -8,6 +8,10 @@ const User = require('./User');
     onDelete: 'CASCADE'
   });
 
+  Artists.belongsTo(User, {
+    foreignKey: 'user_id'
+  })
+
 Genre.hasMany(Artists, {
     foreignKey: 'user_id'
 });
