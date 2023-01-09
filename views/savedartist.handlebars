@@ -1,0 +1,21 @@
+{{>navigation}}
+<!--saved artist page-->
+<link rel="stylesheet" href="/css/genre.css" type="text/css">
+
+<div class='artist-container'>
+  <div class='card-header row'>
+    <h2 "text-left">
+      My Saved Artists
+    </h2>
+  </div>
+
+  {{#each artists as |artist|}} 
+
+  <div class='photoblock col-md-2'>
+    <a href="/artist/{{artist.id}}"> <img src="./images/{{artist.img_filename}}" class="img-thumbnail" alt="{{artist.band_name}} image"></a>
+    <p class="text-left">{{artist.band_name}}</p> 
+  </div>
+  
+  {{/each}}
+  
+</div>
