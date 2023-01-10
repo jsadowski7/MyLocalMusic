@@ -117,6 +117,8 @@ body {
     background-image: url("/images/dark-band2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 300px;
+
     /*background-color: var(--dark);*/
 }
 
@@ -201,6 +203,7 @@ footer {
     left: 0;
     margin: 0 auto;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .copyright {
